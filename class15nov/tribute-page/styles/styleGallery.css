@@ -1,0 +1,62 @@
+@import url('https://fonts.cdnfonts.com/css/iron-maiden');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+*{
+    margin:0;
+}
+body{
+    background-color: black;
+}
+.contenidos{
+    color:white;
+    background-color: black;
+    height:auto;
+}
+.header{
+    background-color: gray;
+}
+
+.logo{
+    margin:0 auto;
+    width:20%;
+}
+.logo-img{
+    margin:-30% auto;
+    height:370px;
+}
+.yellow{
+    margin:-30px -5px 0;
+    font-size:30px;
+    font-family: 'Iron Maiden', sans-serif;
+    color:yellow;
+}
+.red{
+    margin:-30px 20px 0;
+    font-size:30px;
+    font-family: 'Iron Maiden', sans-serif;
+    color:red;
+}
+.texto{
+    display:flex;
+}
+.logo-head{
+    margin-left:2px;
+    height:90px;
+}
+.header{
+    background-color: black;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.enlaces1{
+    display: flex;
+    text-align: justify;
+}
+.enlaces2{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-family: 'Libre Baskerville', serif;
+    margin-top:25px;
+    margin: 25px 125%;
+}

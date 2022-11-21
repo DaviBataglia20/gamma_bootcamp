@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Policia de entrepeñes</h1>
+        <h2>formulario de denuncio de robo de bicicleta</h2>
+        <form>
+            <label for="time">Dia:</label>
+            <input type="date" name="time" id="time">
+            <br>
+            <label for="color">Color de la bicicleta:</label>
+            <input type="color" name="color" id="color">
+            <br>
+            <label for="price">Rango de precio:</label>
+            <input type="number" name="price" id="price"placeholder="0€ a 100.000€"
+            max="100.000" min="0">
+            <br>
+           <label for="bike-type">Tipo de bicicleta</label>
+           <select name="bike-type" id="bike-type">
+            <optgroup label="Paseo">
+                <option value="Señorial">Señorial</option>
+                <option value="antiPlebeyos">Anti-plebeyos</option>
+                <option value="porEncimaDelHombro">porEncimaDelHombro</option>
+            </optgroup>
+            <optgroup label="gamusinos">
+                <option value="gamusinos">Gamusinos</option>
+                <option value="huelefloresPremium">Hueleflores premium</option>
+                <option value="fangoLover">Fango lover</option>
+            </optgroup>
+            <optgroup label="carreras">
+                <option value="metroymedio">Metroymedio</option>
+                <option value="3DeLaTarde">3 de la tarde</option>
+                <option value="grupitos">Grupitos</option>
+            </optgroup>
+           </select>
+           <br>
+           <label for="acessories">Acessorios:</label>
+           <br>
+           <input type="checkbox" name="acessories" id="acessories">
+           <label for="ruedines">Ruedines</label>
+           <br>
+           <input type="checkbox" name="acessories" id="acessories">
+           <label for="pegatinas">Pegatinas</label>
+           <br>
+           <input type="checkbox" name="acessories" id="acessories">
+           <label for="cestita">Cestita</label>
+           <br>
+           <input type="checkbox" name="acessories" id="acessories">
+           <label for="bombaDeAire">Bomba de aire</label>
+           <br>
+           <input type="checkbox" name="acessories" id="acessories">
+           <label for="timbre">Timbre</label>
+           <br>
+           <input type="checkbox" name="acessories" id="acessories">
+           <label for="foco">Foco</label>
+           <br>
+           <label for="brand"> ¿Que marca era?</label>
+           <input list="marca" name="brand" id="brand">
+           <datalist id="marca">
+                <option value="specialized">specialized</option>
+                <option value="trek">trek</option>
+                <option value="merida">merida</option>
+                <option value="scott">scott</option>
+                <option value="giant">giant</option>
+                <option value="cube">cube</option>
+           </datalist>
+        </form>
+    </main>
+</body>
+</html>
