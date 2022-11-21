@@ -1,0 +1,26 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    transition: background-color 1s, transform 0.5s 1s ;
+    margin:100px;
+}
+div.a:hover{
+    background-color: red;
+    transform: scale(1.2) rotate(45deg) ;
+}
+h1{
+    color:black;
+    transition:transform 1s , color 1s 1s;
+}
+div:hover>h1{
+    transform: translateX(100px);
+    color:white;
+}
+.b{
+    transition: transform 3s;
+}
+.a:hover+.b{
+    transform: translateX(900px) rotate(360deg);
+    
+}

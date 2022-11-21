@@ -34,7 +34,7 @@ header>h2{
     text-align: center;
 }
 .foto1{
-    background-image: url(/gamma_bootcamp-1/class21nov/galeria_de_imagenes/assets/images/gallery_photo_1.avif);
+    background-image: url(/class21nov/galeria_de_imagenes/assets/images/gallery_photo_1.avif);
     background-size:250px 350px; 
     background-repeat: no-repeat;
     height: 350px;
@@ -69,7 +69,7 @@ header>h2{
     text-align: center;
 }
 .foto2{
-    background-image: url(/gamma_bootcamp-1/class21nov/galeria_de_imagenes/assets/images/gallery_photo_2.avif);
+    background-image: url(/class21nov/galeria_de_imagenes/assets/images/gallery_photo_2.avif);
     background-position: bottom 480px left 400px;
     height: 350px;
     width: 250px;
@@ -93,7 +93,7 @@ header>h2{
     text-align: center;
 }
 .foto3{
-    background-image: url(/gamma_bootcamp-1/class21nov/galeria_de_imagenes/assets/images/gallery_photo_3.avif);
+    background-image: url(/class21nov/galeria_de_imagenes/assets/images/gallery_photo_3.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 15% ;
@@ -118,7 +118,7 @@ header>h2{
     text-align: center;
 }
 .foto4{
-    background-image: url(/gamma_bootcamp-1/class21nov/galeria_de_imagenes/assets/images/gallery_photo_4.avif);
+    background-image: url(/class21nov/galeria_de_imagenes/assets/images/gallery_photo_4.avif);
     background-size:50% ;
     background-repeat: repeat;
     height: 350px;
@@ -141,7 +141,7 @@ header>h2{
     text-align: center;
 }
 .foto5{
-    background-image:url(/gamma_bootcamp-1/class21nov/galeria_de_imagenes/assets/images/gallery_photo_5.avif) ;
+    background-image:url(/class21nov/galeria_de_imagenes/assets/images/gallery_photo_5.avif) ;
     background-position: 95% 100%;
     height: 350px;
     width: 250px;
@@ -163,7 +163,7 @@ header>h2{
     text-align: center;
 }
 .foto6{
-    background-image: url(/gamma_bootcamp-1/class21nov/galeria_de_imagenes/assets/images/gallery_photo_6.avif);
+    background-image: url(/class21nov/galeria_de_imagenes/assets/images/gallery_photo_6.avif);
     background-size: 250px 350px;
     background-repeat: no-repeat;
     height: 350px;
