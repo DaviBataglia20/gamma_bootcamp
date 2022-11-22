@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+}
+.card{
+    margin: 50px auto;
+    width: 650px;
+    height: 500px;
+    background-image: url(/class21nov/ejercicio_transicion/ejercicio_5/images/supreme-nike-shox-ride-2-black-release-date-2.webp) ;
+    background-size: cover;
+    background-position: top center ;
+    border-radius: 50px;
+    transition: transform 1s,filter 1s,box-shadow 1s;
+    filter: grayscale(1);
+    box-shadow:2px 1px 7px gray;
+}
+.card:hover{
+    transform: scale(1.1);
+    filter:none; 
+    box-shadow: 5px 5px 10px black;
+}
+.texto{
+    padding-top: 50px;
+    padding-left: 20px;
+}
+.texto>h2,p,button{
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+button{
+    border:2px solid black;
+    color:black;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color 0.5s , color 0.5s;
+    
+}
+button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
