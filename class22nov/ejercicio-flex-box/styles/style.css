@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color:#5B9EED;
+}
+.main{
+    max-width: 25%;
+    height:450px;
+    margin:5% auto 5%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px gray ;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+
+}
+.profile{
+    margin:15px 50px 15px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.foto1,.foto2,.foto3,.foto4{
+    background-color: gray;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+.foto1{
+    background-image: url(/class22nov/ejercicio-flex-box/assets/fary.jpg);
+    background-size: cover;
+}
+.foto2{
+    background-image: url(/class22nov/ejercicio-flex-box/assets/manolo.jpg);
+    background-size: cover;
+}
+.foto3{
+    background-image: url(/class22nov/ejercicio-flex-box/assets/rocio.jpg);
+    background-size: cover;
+}
+.foto4{
+    background-image: url(/class22nov/ejercicio-flex-box/assets/lola.jpg);
+    background-size: cover;
+}
+.name1{
+    color: #555555;
+    font-size: 25px;
+    font-weight: bold;
+}
+.description{
+    color:#555555;
+    font-size: 20px;
+}
