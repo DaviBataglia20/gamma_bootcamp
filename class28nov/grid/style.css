@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+.grid-container {
+    border: 2px solid grey;
+}
+div {
+    padding: 20px 0;
+    background-color: #E91E62;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns:25vw 25vw 25vw 25vw;
+    grid-template-rows: 50px  50px 50px 50px 50px;
+    gap:10px;
+    grid-template-areas:"january january february february"
+                        "march   april  may      june"
+                        "july    august may      june"
+                        "september october october november"
+                        "december december december december";
+}
+#january{
+    grid-area: january;
+}
+#february{
+    grid-area: february;
+}
+#march{
+    grid-area: march;
+}
+#april{
+    grid-area: april;
+}
+#may{
+    grid-area: may;
+}
+#june{
+   grid-area:june;
+}
+#july{
+    grid-area:july
+}
+#august{
+   grid-area: august;
+}
+#september{
+   grid-area: september;
+}
+#october{
+    grid-area: october;
+}
+#november{
+    grid-area: november;
+}
+#december{
+    grid-area: december;
+}
