@@ -5,22 +5,29 @@
     margin: 50px auto;
     width: 650px;
     height: 500px;
-    background-image: url(/class21nov/ejercicio_transicion/ejercicio_5/images/supreme-nike-shox-ride-2-black-release-date-2.webp) ;
+    background-image: url(/gamma_bootcamp-1/class21nov/ejercicio_transicion/ejercicio_5/images/supreme-nike-shox-ride-2-black-release-date-2.webp) ;
     background-size: cover;
     background-position: top center ;
     border-radius: 50px;
     transition: transform 1s,filter 1s,box-shadow 1s;
     filter: grayscale(1);
     box-shadow:2px 1px 7px gray;
+    overflow: hidden;
 }
 .card:hover{
     transform: scale(1.1);
     filter:none; 
     box-shadow: 5px 5px 10px black;
 }
+.card:hover>.texto{
+    transform: translateX(300px);
+}
 .texto{
+    position: relative;
+    left: -300px;
     padding-top: 50px;
     padding-left: 20px;
+    transition: 0.6s 0.4s;
 }
 .texto>h2,p,button{
     font-family: sans-serif;

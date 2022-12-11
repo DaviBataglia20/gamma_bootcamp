@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons{
+    width: 40%;
+    height: 80vh;
+    border: 1px solid gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: stretch;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+.buttons>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+.button1{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.button1>div:nth-of-type(2){
+    transition: 0.1s;
+}
+.button1:hover>div:nth-of-type(2){
+    transform:rotate(-40deg)
+}
+.button1>div:nth-of-type(3){
+    transition: 0.3s;
+}
+.button1:hover>div:nth-of-type(3){
+    transform:rotate(220deg) translate(8px,9px);
+}
+.button1>div:nth-of-type(1){
+    transition:0.1s;
+}
+.button1:hover>div:nth-of-type(1){
+    transform:scale(0);
+}
+.button1>div{
+    background-color: black ;
+    width: 50px;
+    height: 5px;
+    border-radius: 2px;
+}
+.button2{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.button2>div {
+    transition: all 0.2s ease-in-out;
+ }
+ .button2:hover>div{
+   box-shadow: 1px 1px 2px gray, 2px 2px 2px gray, 3px 3px 2px gray;
+   transform: translateX(-3px);
+ }
+.button2>div{
+    background-color: black ;
+    width: 7px;
+    height: 7px;
+    border-radius: 5px;
+}
+.button3{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.button3>div{
+    transition: 0.6s;
+}
+.button3:hover>div,.button3:hover>div:nth-of-type(2){
+    background-color:fuchsia;
+    transform:scale(1.2) ;
+    box-shadow: 0px 5px 5px gray;
+}
+.button3>div{
+    background-color: black ;
+    width: 30px;
+    height: 5px;
+    border-radius: 2px;
+}
+.button3>div:nth-of-type(2){
+    background-color: black ;
+    width: 45px;
+    height: 5px;
+    border-radius: 2px;
+}
+.button4{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.button4>div{
+    background-color: black ;
+    width: 50px;
+    height: 5px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+.button4:hover>div:nth-of-type(3){
+    position: fixed;
+    height: 50px;
+}
+.button4:hover>div:nth-of-type(1){
+    transform: scale(0);
+}
+.button4:hover>div:nth-of-type(2){
+    transform: scale(0);
+}
+.button4>div:nth-of-type(2){
+    position: relative;
+    right: -7.5px;
+    background-color: black ;
+    width: 35px;
+    height: 5px;
+    border-radius: 2px;
+}
+.button5{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.button5>div{
+    background-color: black ;
+    width: 50px;
+    height: 5px;
+    border-radius: 2px;
+}
+.button5>div:nth-of-type(2){
+    background-color: black ;
+    width: 35px;
+    height: 5px;
+    border-radius: 2px;
+}
+.button5>div:nth-of-type(3){
+    background-color: black ;
+    width: 20px;
+    height: 5px;
+    border-radius: 2px;
+}
+.button6{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.cajita{
+    background-color: beige;
+    width: 20%;
+    height: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.cajita>div{
+    background-color: black ;
+    width: 35%;
+    height: 45%; 
+}
+
