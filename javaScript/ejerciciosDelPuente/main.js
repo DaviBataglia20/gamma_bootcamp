@@ -1,24 +1,29 @@
 /* EJERCICIO 1 */
-/* let angulo1 = 60;
-let angulo2 = 60;
-let angulo3 = 60;
+/* let angulo1 = 90;
+let angulo2 = 90;
+let angulo3 = 90;
 if(angulo1 + angulo2 + angulo3 == 180){
     console.log("el triangulo es valido");
     if(angulo1 < 90 && angulo2 < 90 && angulo3 < 90){
         console.log("el triangulo es acutángulo")
     
-    }else if(angulo1 > 90 && angulo2 < 90 && angulo3 < 90){
+    }
+    else if(angulo1 > 90 && angulo2 < 90 && angulo3 < 90){
         console.log("el triangulo es uno obtusangulo");
-    }else if(angulo2 > 90 && angulo1 < 90 && angulo3 < 90){
+    }
+    else if(angulo2 > 90 && angulo1 < 90 && angulo3 < 90){
         console.log("el triangulo es uno obtusangulo");
     }
     else if(angulo3 > 90 && angulo1 < 90 && angulo2 < 90){
         console.log("el triangulo es uno obtusangulo");
-    }else if(angulo1 == 90 && angulo2 + angulo3 == 90){
+    }
+    else if(angulo1 == 90 && angulo2 + angulo3 == 90){
         console.log("el triangulo es uno rectangulo");
-    }else if(angulo2 > 90 && angulo1 + angulo3 == 90){
+    }
+    else if(angulo2 > 90 && angulo1 + angulo3 == 90){
         console.log("el triangulo es uno rectangulo");
-    }else if(angulo3 > 90 && angulo1 + angulo2 == 90){
+    }
+    else if(angulo3 > 90 && angulo1 + angulo2 == 90){
         console.log("el triangulo es uno rectangulo");
     }
     else{
@@ -165,7 +170,7 @@ console.log(finalStr); */
 /* let str = prompt("escribe tu direccion de email");
 if(str.includes('@')){
     indexStr = str.indexOf('@')
-    finalStr = str.slice(indexStr,str.length);
+    finalStr = str.slice(indexStr+1,str.length);
     console.log(finalStr);
 }else{
     console.log("Dirección de correo incorrecta");
@@ -287,17 +292,19 @@ if(str.includes(letter)){
 /* EJERCICIO 16 */
 
 /* EJERCICIO 17 */
-let str = prompt("escriba una palabra");
-let typ = typeof(str);
-let num = 2;
-let typnum = typeof(num);
-if(typ === typnum){
-    console.log("Input inválido")
-}else{
-    for(i = 0 ; i < str.length ; i++){
-        console.log(str[i]);
-        if(i %1 === 0){
-            console.log("ciclo")
+/* let palabra = 'Davi y Millard'.toLowerCase()
+let palabraDos = ''
+if (typeof palabra === 'string'){
+    for(i = 0; i < palabra.length; i++){
+        if( i === 0 || i % 2 !== 0){
+            palabraDos += palabra[i].toLowerCase()
+        }else{
+            palabraDos += palabra[i].toUpperCase()
+            
         }
     }
-    }
+    console.log(palabraDos)
+
+}else{
+    console.log('Fuera de aqui')
+} */
