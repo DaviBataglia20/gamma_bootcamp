@@ -1,44 +1,44 @@
 /* EJERCICIO 1 */
-/* function hola(){
+function hola(){
     return "Hello World"
 }
-console.log(hola()); */
+console.log(hola());
 /* EJERCICIO 1 */
 
 /* EJERCICIO 2 */
-/* function cuadrado(num){
+function cuadrado(num){
     return num * num ;
 }
-console.log(cuadrado(7)) */
+console.log(cuadrado(7))
 /* EJERCICIO 2 */
 
 /* EJERCICIO 3 */
-/* function saludo(nombre){
+function saludo(nombre){
     return "hi, " + nombre ;
 }
 nome = prompt("escribe un nombre");
-console.log(saludo(nome)); */
+console.log(saludo(nome));
 /* EJERCICIO 3 */
 
 /* EJERCICIO 4 */
-    /* function area(area1 = 5, area2 = 3){
+    function area(area1 = 5, area2 = 3){
         return area1 * area2 ;
     }
-    console.log(area(6,3)); */
+    console.log(area(6,3));
 /* EJERCICIO 4 */
 
 /* EJERCICIO 5 */
- /*    function convert(celsiun = 0){
+    function convert(celsiun = 0){
         let Fahrenheit = celsiun * 1.8 + 32;
         return Fahrenheit ;
     }
 celsiun = parseInt(prompt("nos di un grado"));
 console.log(convert(celsiun));
- */
+
 /* EJERCICIO 5 */
 
 /* EJERCICIO 6 */
-/*     function vocales(nombre){
+    function vocales(nombre){
         num = 0 ;
         for(i= 0 ; i < nombre.length ; i++){
             switch (true) {
@@ -65,20 +65,20 @@ console.log(convert(celsiun));
         return num
     }
 nombre = prompt("escribe algo")
-console.log(vocales(nombre)); */
+console.log(vocales(nombre));
 /* EJERCICIO 6 */
 
 /* EJERCICIO 7 */
-/* function getRandomArbitrary(min, max) {
+function getRandomArbitrary(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
   }
 let min = parseInt(prompt("escribe un numero minimo"));
 let max = parseInt(prompt("escribe un numero maximo"));
-console.log(getRandomArbitrary(min,max));   */
+console.log(getRandomArbitrary(min,max));  
 /* EJERCICIO 7 */
 
 /* EJERCICIO 8 */
-/* function getRandomArbitrary(max) {
+function getRandomArbitrary(max) {
     return Math.floor(Math.random() * max) ;
   }
 let max = parseInt(prompt("escribe un numero maximo"));
@@ -96,11 +96,11 @@ for (i = 0 ; i < arr.length ; i++){
     }
 }
 console.log("NUMEROS PARES GENERADOS DEL ARRAY ALEATORIO")
-console.log(arr1); */
+console.log(arr1);
 /* EJERCICIO 8 */
 
 /* EJERCICIO 9.1 */
-/*     function comprobar(str,arr){
+    function comprobar(str,arr){
         if (arr.includes(str)){
             return true
         }else{
@@ -109,29 +109,48 @@ console.log(arr1); */
     }
 let str="a";
 let arr = [ 1 , 2 , 3 , "a"];
-console.log(comprobar(str,arr)); */
+console.log(comprobar(str,arr));
 /* EJERCICIO 9.1 */
 
 /* EJERCICIO 9.2 */
-function comprobar(arr){
-    if (arr.includes(typeof "a")){
+function comprobar(str,arr){
+    if (arr.includes(str)){
         return true
         
     }else{
         return false
     }
 }
-let arr = [ 1 , 2 , 3 , "c"];
-if(comprobar(arr) === true){
-    let newArr = [];
-    for(i = 0 ; i < arr.length ; i++){
-        if(arr[i] === typeof 2){
-            newArr.push(arr[i]);
+str = prompt("escribe una letra")
+let arr = [ 1 , 2 , str ,4 , 5, str];
+function eliminar(str,arr){
+    if(comprobar(str,arr) === true){
+        for(i = 0 ; i < arr.length ; i++){
+            if(typeof arr[i] === "string" ){
+                arr.splice(i,1,)
+            }
+
         }
+        console.log(arr)
     }
-console.log(newArr);
 }
+eliminar(str,arr);
 /* EJERCICIO 9.2 */
+
+/* EJERCICIO 10 */
+data = ["a","b","c"];
+const convert = data =>{
+     typeof data === "string"?console.log(data.split("")):
+     typeof data === "object"?console.log(data.join("")):
+     typeof data === "number"?console.log(data.toString()):false
+}
+convert(data)
+
+/* EJERCICIO 10 */
+
+/* EJERCICIO 11 */
+    
+
 
 
 
