@@ -309,8 +309,12 @@ if (typeof palabra === 'string'){
     console.log('Fuera de aqui')
 } */
 /* EJERCICIO 18 */
-let str = prompt("escribe una palabra");
+/* let str = prompt("escribe una palabra");
 if (str.length > 8){
     console.log(str.slice(str[0],8));
-}
+} */
 /* EJERCICIO 18 */
+let str = prompt ("escribe una palabra con exclamacion");
+if(str.includes("!")){
+    console.log(str.replaceAll("!"," "));
+}

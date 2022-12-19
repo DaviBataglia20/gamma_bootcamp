@@ -130,7 +130,7 @@ console.log(numbers); */
 
 /* EJERCICIO 6.2 */
 /* let result = 0;
-for(i = 0 ; i <= 10 ; i++){
+for(i = 0 ; i < numbers.length ; i++){
     result += numbers[i];
     console.log(result);
 } */
@@ -153,11 +153,11 @@ console.log(odds); */
 /* EJERCICIO 6.3 */
 
 /* EJERCICIO 7 */
-/* const fruits = ["pera", "banana", "mandarina", "frambuesa"];
+const fruits = ["pera", "banana", "mandarina", "frambuesa"];
 const colors = ["verde", "amarilla", "naranja", "roja"];
     for(i = 0 ; i < fruits.length ; i++){
         console.log(`La ${fruits[i]} es ${colors[i]}`);
-    } */
+    }
 /* EJERCICIO 7 */
 
 /* EJERCICIO 8 */
