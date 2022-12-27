@@ -120,25 +120,25 @@ console.log(arr) */
 /* EJERCICIO 5 */
 
 /* EJERCICIO 6.1 */
-/* let numbers = [];
+let numbers = [];
 for(i = 0 ; i <= 10 ; i++){
     numbers.splice(i,0,i);
     // numbers.push(i)
 }
-console.log(numbers); */
+console.log(numbers);
 /* EJERCICIO 6.1 */
 
 /* EJERCICIO 6.2 */
-/* let result = 0;
+let result = 0;
 for(i = 0 ; i < numbers.length ; i++){
     result += numbers[i];
     console.log(result);
-} */
+}
 
 /* EJERCICIO 6.2 */
 
 /* EJERCICIO 6.3 */
-/* let evens = [];
+let evens = [];
 let odds = [];
 for(i = 0 ; i < numbers.length ; i++){
     if(numbers[i] % 2 === 0){
@@ -149,15 +149,15 @@ for(i = 0 ; i < numbers.length ; i++){
 
 }
 console.log(evens);
-console.log(odds); */
+console.log(odds);
 /* EJERCICIO 6.3 */
 
 /* EJERCICIO 7 */
-const fruits = ["pera", "banana", "mandarina", "frambuesa"];
+/* const fruits = ["pera", "banana", "mandarina", "frambuesa"];
 const colors = ["verde", "amarilla", "naranja", "roja"];
     for(i = 0 ; i < fruits.length ; i++){
         console.log(`La ${fruits[i]} es ${colors[i]}`);
-    }
+    } */
 /* EJERCICIO 7 */
 
 /* EJERCICIO 8 */

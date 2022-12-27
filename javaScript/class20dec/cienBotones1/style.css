@@ -1,15 +1,14 @@
-
-section>div{
+.hola {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
     font-size: 25px;
-    color:black;
+    color:white;
     border:solid gray 3px;
     border-bottom-color: black ;
     border-right-color: black;
-    width: 6.5%;
+    width: 5.4%;
     min-height: 8vh;
-    
+    background-color:red;
 }

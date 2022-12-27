@@ -269,13 +269,13 @@ console.log(`Tardas ${i} dias en comerlas`) */
 /* EJERCICIO 14 */
 
 /* EJERCICIO 15 */
-/* for(i= 0 ; i < 6;i++){
+for(i= 0 ; i < 1;i++){
       for(j = 0 ; j < 10; j++){
         console.log(`${i} : ${j}`);
     }
 
 
-} */
+}
 /* EJERCICIO 15 */
 
 /* EJERCICIO 16 */
@@ -314,7 +314,7 @@ if (str.length > 8){
     console.log(str.slice(str[0],8));
 } */
 /* EJERCICIO 18 */
-let str = prompt ("escribe una palabra con exclamacion");
+/* let str = prompt ("escribe una palabra con exclamacion");
 if(str.includes("!")){
     console.log(str.replaceAll("!"," "));
-}
+} */
