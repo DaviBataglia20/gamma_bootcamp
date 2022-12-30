@@ -117,8 +117,52 @@ buttonLi5.addEventListener("click",() =>{
    
    
 })
+const divs = document.querySelectorAll('#square-container>div');
+divs.forEach(div => {
+  div.addEventListener('click', event => {
+    event.target.remove();
+  });
+});
+const addButton = document.querySelector('#ejercicio-6>button');
+const cajacuadrados = document.querySelector("#square-container")
+addButton.addEventListener('click', event => {
+  const newDiv = document.createElement('div');
+  newDiv.classList.add('square');
+  cajacuadrados.appendChild(newDiv);
+});
+const colorsContainer = document.querySelector(".color-div");
+const containerButtons = document.querySelector("#color_btns")
+const bBlue = containerButtons.children[0];
+const bRed = containerButtons.children[1];
+const bGreen = containerButtons.children[2];
+const bBlack = containerButtons.children[3];
+const bPurple = containerButtons.children[4];
 
-
-
-
-
+bBlue.addEventListener("click",()=>{
+    colorsContainer.style.background = "blue";
+})
+bRed.addEventListener("click",()=>{
+    colorsContainer.style.background = "red";
+})
+bBlack.addEventListener("click",()=>{
+    colorsContainer.style.background = "black";
+})
+bGreen.addEventListener("click",()=>{
+    colorsContainer.style.background = "green";
+})
+bPurple.addEventListener("click",()=>{
+    colorsContainer.style.background = "purple";
+})
+const abreCierraTexto = document.querySelector("#faq-card>p");
+const abreCierraBoton = document.querySelector("#faq-title>button")
+abreCierraBoton.addEventListener("click",()=>{
+    if (abreCierraTexto.style.display === "none"){
+        abreCierraTexto.style.display = "block";
+        abreCierraBoton.innerHTML="Close"
+    
+    }
+    else{
+        abreCierraBoton.innerHTML="Open"
+        abreCierraTexto.style.display = "none";
+    }
+})
