@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 30% 40% 30% ;
+    grid-template-rows: 5vh 70vh 25vh;
+    
+
+}
+.mainContain{
+    box-sizing: content-box;
+    grid-column-start: 2;
+    grid-column-end:3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    gap:2%;
+}
+.img{
+    background-color: #3333FF;
+    height: 30vh;
+    width:100%;
+}
+.img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contador{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: #913F11;
+}
+.puntuacionMaxima{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 5vh;
+    background-color: #913F11;
+
+}
+.botones{
+    display: grid;
+    height: 10vh;
+}
+.contador>div{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 40%;
+    font-weight: 700;
+    text-shadow: 2px 2px #333;
+}
+.botones>button{
+    height: 100%;
+    color:#fff ;
+    font-weight: 700;
+    text-shadow: 2px 2px #333;
+}
+.botones>button:first-child{
+    background-color: #FF22FF;
+}
+.botones>button:nth-child(2){
+    background-color: #1FF25F;
+}
+.botones>button:last-child{
+    background-color: #2F2FFF;
+}
+.contador>div:first-child{
+    color: #FF22FF;
+}
+.contador>div:last-child{
+    color: #1FF25F;
+}
+.mainContain>h2{
+    margin: 0 auto;
+}

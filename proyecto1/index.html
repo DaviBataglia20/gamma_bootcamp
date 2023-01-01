@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainContain">
+        <h2>THE PING-PONG GAME</h2>
+        <div class="img">
+            <img src="https://www.marketplace.org/wp-content/uploads/2020/07/GettyImages-1248502207.jpg?fit=2880%2C1620" alt="ping-pong">
+        </div>
+        <div class ="contador">
+            <div>
+                <p>Jugador 1</p>
+                <p>0</p>
+            </div>
+            <div>
+                <p>Jugador 2</p>
+                <p>0</p>
+            </div>
+        </div>
+        <div class ="puntuacionMaxima">
+            <label for="max-points">Puntos máximos:</label>
+            <select id="maximaPuntuacion">
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="7">7</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+    </select>
+        </div>
+        <div class ="botones">
+            <button id="jugador1Buton">+1</button>
+            <button id="jugador2Buton">+1</button>
+            <button id="maximaPuntuacion">Reiniciar</button>
+        </div>
+    </div>
+      <script src="main.js"></script>
+</body>
+</html>
