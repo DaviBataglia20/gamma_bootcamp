@@ -5,20 +5,24 @@ const resetarButon = document.querySelector("#resetearLista");
 
 /* Hacer funciones */
 const añadirALaLista = () =>{
-    /* obtener valor de la lista */
-    let textoInput = document.getElementById("textoTarea").value;   
-    
+ /* obtener valor de la lista */
+let textoInput = document.getElementById("textoTarea");
+   if(textoInput.value === ""){
+    console.log("davi paso pora maqui¡")
+
+   }else{
     /* obtener la lista */
     const listaEtiqueta = document.getElementById("listaCompleta")
 
     /* crear y añadir la tarea a la lista */
         const tarea = document.createElement("li");
         tarea.innerHTML = `<div>
-                                <p>${textoInput}</p>
+                                <p>${textoInput.value}</p>
                                 <button onclick="borrarEstaTarea(this)">Borrar</button>
                             </div>`
         listaEtiqueta.appendChild(tarea)
-
+   }
+   textoInput.value = "";
 }
 
 const  resetearTodo = () =>{
@@ -46,3 +50,8 @@ resetarButon.addEventListener("click",() =>{
     resetearTodo();
 
 })
+const enter = document.querySelector('#textoTarea').addEventListener('keypress',(e) =>{
+    if (e.key === 'Enter') {
+        añadirALaLista();
+    }
+});
