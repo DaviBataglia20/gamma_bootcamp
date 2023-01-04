@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label for="text">Ciudad:</label>
+    <select name="" id="ciudades">
+        <option value="Barcelona">Barcelona</option>
+        <option value="Madrid">Madrid</option>
+        <option value="Sevilla">Sevilla</option>
+        <option value="Valencia">Valencia</option>
+    </select>
+    <label for="number">Número de noches</label>
+    <input required min="1" type="number" id="numeroNoches">
+    <label for="number">Número de días de alquiler del coche</label>
+    <input min ="0" type="number" name="" id="numeroAlquiler">
+    <button type="submit" id="calcular">calcular coste</button>
+    <h2 id = "precioTotal">Coste:0€</h2>
+    <script src="main.js"></script>
+</body>
+</html>
