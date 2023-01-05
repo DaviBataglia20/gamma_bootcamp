@@ -1,64 +1,50 @@
-/* OBTENER CON LO QUE SE VA A JUGAR */
-const ciudad = document.querySelector("#ciudades");
-const numNigths = document.querySelector("#numeroNoches");
-const numCar = document.querySelector("#numeroAlquiler");
-const calButton = document.querySelector("#calcular");
-const precioFinal = document.querySelector("#precioTotal");
-numNigths.addEventListener("change", costeHotel = () => {
-   let numeroDeNoches = parseInt(numNigths.value)
-   precioTotalNoches = 140 * numeroDeNoches;
-})
-
-
-ciudad.addEventListener("change", costeAvion = () => {
-    ciudadElegida = ciudad.value;
-    if(ciudadElegida == "Barcelona"){
-        precioDelVuelo = 90;
-        if(numNigths.value >= 3){
-            precioDelVuelo = precioDelVuelo - (precioDelVuelo * .10)
-
-        }
-    }else if(ciudadElegida == "Madrid"){
-        precioDelVuelo = 90;
-        if(numNigths.value >= 3){
-            precioDelVuelo = precioDelVuelo - (precioDelVuelo * .10)
-
-        }
-    }else if(ciudadElegida == "Sevilla"){
-        precioDelVuelo = 50;
-        if(numNigths.value >= 3){
-            precioDelVuelo = precioDelVuelo - (precioDelVuelo * .10)
-
-        }
-    }else if(ciudadElegida == "Valencia"){
-        precioDelVuelo = 40;
-        if(numNigths.value >= 3){
-            precioDelVuelo = precioDelVuelo - (precioDelVuelo * .10)
-
-        }
+function costeHotel(noches) {
+    return noches * 140;
+  }
+  
+  function costeAvion(ciudad, noches) {
+    let coste = 0;
+    switch (ciudad) {
+      case 'Barcelona':
+        coste = 90;
+        break;
+      case 'Madrid':
+        coste = 90;
+        break;
+      case 'Sevilla':
+        coste = 50;
+        break;
+      case 'Valencia':
+        coste = 40;
+        break;
     }
-    console.log(ciudadElegida,precioDelVuelo)
-})
-numCar.addEventListener("change", costeCoche = () =>{
-    numeroDiasAlquilerCoche = parseInt(numCar.value);
-    precioDelVuelo = 40 * numeroDiasAlquilerCoche;
-    if(numeroDiasAlquilerCoche>= 7){
-        precioDelVuelo = (40 * numeroDiasAlquilerCoche)  - 50;
-    }else if(numeroDiasAlquilerCoche >= 3){
-        precioDelVuelo = 40 * numeroDiasAlquilerCoche  - 20;
-
+    if (noches > 3) {
+      coste *= 0.9;
     }
-})
+    return coste;
+  }
+  
+  function costeCoche(dias) {
+    let coste = dias * 40;
+    if (dias >= 3 && dias < 7) {
+      coste -= 20;
+    } else if (dias >= 7) {
+      coste -= 50;
+    }
+    return coste;
+  }
+  
+  function calcularCoste() {
+    const ciudad = document.getElementById('ciudad').value;
+    const noches = document.getElementById('noches').value;
+    const dias = document.getElementById('dias').value;
+    const costeTotal = costeHotel(noches) + costeAvion(ciudad, noches) + costeCoche(dias);
+    document.getElementById('resultado').innerText = `El coste total del viaje es: ${costeTotal}€`;
+  }
+  document.getElementById('calcular').onclick = calcularCoste;
 
-const calcularCoste = () =>{
-    let costeHotel = costeHotel();
-    let costeAvion = costeAvion();
-    let costeCoche = costeCoche();
-    preciosSumados = costeHotel + costeAvion + costeCoche
-    precioFinal.innerText = `Coste : ${preciosSumados}€`
-}
 
-/* llama a la funcion de calcular */
-calButton.addEventListener("submit",() =>{
-    calcularCoste();
-})
+  
+
+
+
