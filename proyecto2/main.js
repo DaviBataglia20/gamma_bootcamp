@@ -53,5 +53,6 @@ resetarButon.addEventListener("click",() =>{
 const enter = document.querySelector('#textoTarea').addEventListener('keypress',(e) =>{
     if (e.key === 'Enter') {
         añadirALaLista();
+        
     }
 });

@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding: 0;
@@ -6,54 +7,63 @@
 body{
     width: 100%;
     height: 100vh;
-    display: grid;
-    grid: repeat(10,10%) / repeat(10,10%);
-    row-gap: 10px;
 }
 .titulo-item-a{
-    grid-column:3/9;
-    place-self: flex-end center;
+    width: 100%;
+}
+.titulo-item-a>h2{
+    text-align: center;
 }
 .caja-input-item-b{
-    display: grid;
-    grid: repeat(2,1fr) / repeat(8,1fr);
-    grid-column:2/10;
-    grid-row:2/4;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1%;
     border:solid black 2px;
+    border-radius: 20px;
+    padding: 2.5%;
 }
 .caja-input-item-b>div{
-    display: grid;
-    grid: repeat(2,1fr) / repeat(6,1fr);
-    grid-column:2/8;
-    grid-row: 1/3;
-    place-self: stretch center ;
-    padding-bottom: 1%;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 .caja-input-item-b>div>div:first-child{
-    grid-column:2/6;
-    grid-row: 1/1;
-    place-self: stretch center ;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-bottom: 1.5%;
 }
 .caja-input-item-b>div>div:last-child{
-    grid-column:2/6;
-    grid-row: 2/2;
     display: flex;
+    gap:10px;
     justify-content: space-between;
 }
 .caja-input-item-b>div>div:last-child>button{
-    width: 70px;
+    width: 100px;
+    height: 25px;
+}
+#añadirLista{
+    color: white;
+    text-shadow: black 3px 3px 2px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: #00FF00;
+    background-color: #00FF00;
+}
+#resetearLista{
+    color: white;
+    text-shadow: black 3px 3px 2px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: red;
+    background-color: red;
 }
 .lista-item-c{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-column:2/5;
-    grid-row: inherit;
+   margin-left: 10%;
 }
 .lista-item-c>ul{
-    grid-column: 1/4;
+    
 }
 .lista-item-c>ul>li{
     margin: 1%;
@@ -61,10 +71,16 @@ body{
 .lista-item-c>ul>li>div{
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
 }
 .lista-item-c>ul>li>div>button{
-    width: 33%;
+    width: 10%;
     margin-left: 10px;
+    color: white;
+    text-shadow: black 3px 3px 2px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: red;
+    background-color: red;
+
 }
 
