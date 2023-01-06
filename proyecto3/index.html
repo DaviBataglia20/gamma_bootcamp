@@ -8,18 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <label for="text">Ciudad:</label>
-    <select name="" id="ciudad">
-        <option value="Barcelona">Barcelona</option>
-        <option value="Madrid">Madrid</option>
-        <option value="Sevilla">Sevilla</option>
-        <option value="Valencia">Valencia</option>
-    </select>
-    <label for="number">Número de noches</label>
-    <input required min="1" type="number" id="noches">
-    <label for="number">Número de días de alquiler del coche</label>
-    <input min ="0" type="number" name="" id="dias">
+    <h3>lo se que no vas a viajar,pero al menos podemos calcular</h3>
+    <div>
+        <label for="text">Ciudad:</label>
+        <select name="" id="ciudad">
+            <option value="Barcelona">Barcelona</option>
+            <option value="Madrid">Madrid</option>
+            <option value="Sevilla">Sevilla</option>
+            <option value="Valencia">Valencia</option>
+        </select>
+    </div>  
+    <div> 
+        <label for="number">Número de noches</label>
+        <input required min="1" type="number" id="noches">
+    </div>
+    <div>
+        <label for="number">Número de días de alquiler del coche</label>
+        <input min ="0" type="number" name="" id="dias">
+    </div>
+
     <button type="submit" id="calcular">calcular coste</button>
+
     <h2 id = "resultado">Coste:0€</h2>
     <script src="main.js"></script>
 </body>

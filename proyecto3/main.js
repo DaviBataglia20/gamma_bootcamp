@@ -39,7 +39,7 @@ function costeHotel(noches) {
     const noches = document.getElementById('noches').value;
     const dias = document.getElementById('dias').value;
     const costeTotal = costeHotel(noches) + costeAvion(ciudad, noches) + costeCoche(dias);
-    document.getElementById('resultado').innerText = `El coste total del viaje es: ${costeTotal}€`;
+    document.getElementById('resultado').innerText = `Coste: ${costeTotal}€`;
   }
   document.getElementById('calcular').onclick = calcularCoste;
 
