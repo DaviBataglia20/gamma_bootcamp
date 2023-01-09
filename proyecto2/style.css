@@ -62,9 +62,6 @@ body{
 .lista-item-c{
    margin-left: 10%;
 }
-.lista-item-c>ul{
-    
-}
 .lista-item-c>ul>li{
     margin: 1%;
 }
