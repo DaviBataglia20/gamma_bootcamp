@@ -43,13 +43,8 @@ const borrarEstaTarea = (btn) =>{
 
 
 /* añadir eventos a los butones y al input */
-añadirButon.addEventListener("click", () =>{
-    añadirALaLista();
-});
-resetarButon.addEventListener("click",() =>{
-    resetearTodo();
-
-})
+añadirButon.addEventListener("click",añadirALaLista);
+resetarButon.addEventListener("click",resetearTodo);
 const enter = document.querySelector('#textoTarea').addEventListener('keypress',(e) =>{
     if (e.key === 'Enter') {
         añadirALaLista();

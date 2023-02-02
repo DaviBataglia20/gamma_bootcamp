@@ -1,0 +1,26 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.cajaBusqueda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cajaBusqueda>input{
+    width: 18%;
+}
+.clima{
+    width: 40%;
+    height: 50%;
+    padding: 0.5%;
+    margin: 1% auto;
+    background-color: bisque;
+    border-radius: 20px;
+}

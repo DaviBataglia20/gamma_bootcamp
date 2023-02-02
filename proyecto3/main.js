@@ -6,8 +6,6 @@ function costeHotel(noches) {
     let coste = 0;
     switch (ciudad) {
       case 'Barcelona':
-        coste = 90;
-        break;
       case 'Madrid':
         coste = 90;
         break;
