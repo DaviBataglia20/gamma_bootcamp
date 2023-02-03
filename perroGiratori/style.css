@@ -12,8 +12,8 @@ body{
 .giro{
     position: absolute;
     z-index: 1;
-    top: -80px;
-    left: -130px;
+     top: -80px;
+        left: -130px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,6 +25,7 @@ body{
     rotate: 20deg;
     transition: all 0.5s ease-in-out;
 }
+
 .girado{
     rotate: -50deg;
 }
@@ -90,5 +91,4 @@ body{
 .article>div:first-child{
     width: 150%;
     height: 120%;
-    border: 5px solid white;
 }
